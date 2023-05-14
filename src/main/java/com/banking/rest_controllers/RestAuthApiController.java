@@ -18,7 +18,7 @@ public class RestAuthApiController { // This class is used to handle the rest ap
     private UserRepository userRepository; // This is the dependency of this class.
 
     @GetMapping("/login") // This annotation is used to map the request url.
-    public ResponseEntity validateUserEmail(@PathVariable("email")String email){ // This method is used to validate the user email.
+    public ResponseEntity<String> validateUserEmail(@PathVariable("email")String email){ // This method is used to validate the user email.
         // Get User Email
         String userEmail = userRepository.getUserEmail(email);
         // Init User Password
