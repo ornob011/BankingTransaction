@@ -22,6 +22,22 @@ Banking Transaction is a comprehensive banking transaction management system tha
     - [Transaction History Table](#transaction-history-table)
     - [Payments Table](#payments-table)
     - [Views](#views)
+  - [API Documentation](#api-documentation)
+    - [Users](#users)
+      - [Register User](#register-user)
+      - [Verify User](#verify-user)
+      - [Login User](#login-user)
+    - [Accounts](#accounts)
+      - [Create Account](#create-account)
+      - [Dashboard](#dashboard)
+    - [Transactions](#transactions)
+      - [Deposit](#deposit)
+      - [Withdraw](#withdraw)
+      - [Transfer](#transfer)
+      - [Payment History](#payment-history)
+      - [Transaction History](#transaction-history)
+    - [Error](#error)
+    - [Log Out](#log-out)
   - [Technical Support](#technical-support)
   - [Contributing](#contributing)
   - [License](#license)
@@ -195,6 +211,7 @@ The BankingTransaction system provides a RESTful API for easy integration with o
 </p>
 
 ### Users
+
 #### Register User
 - **URL:** `/register`
 - **Method:** `POST`
@@ -212,12 +229,13 @@ The BankingTransaction system provides a RESTful API for easy integration with o
 - **Data Params:** `{"email": "john.doe@example.com", "password": "password123", "_token": "c3945bbe-b143-486c-9188-7fdc01dc4fe9"}`
 
 ### Accounts
+
 #### Create Account
 - **URL:** `/account/create_account`
 - **Method:** `POST`
 - **Data Params:** `{"account_name": "DBBL", "account_type": "Savings"}`
 
-### Dashboard
+#### Dashboard
 - **URL:** `/app/dashboard`
 - **Method:** `GET`
 
@@ -229,6 +247,7 @@ The BankingTransaction system provides a RESTful API for easy integration with o
 - **URL Params:** `account_id=[integer]`
 - **Success Response:** `{"status": "success", "data": {"account_name": "John's Savings", "account_type": "savings", "balance": 0}}`
 -->
+
 ### Transactions
 #### Deposit
 - **URL:** `/transact/deposit`
@@ -248,7 +267,6 @@ The BankingTransaction system provides a RESTful API for easy integration with o
 #### Payment History
 - **URL:** `/app/payment_history`
 - **Method:** `GET`
-
 
 #### Transaction History
 - **URL:** `/app/transact_history`
