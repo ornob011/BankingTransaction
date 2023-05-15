@@ -1,6 +1,6 @@
 # Banking Transaction
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[//]: # ([![License: GPL v3]&#40;https://img.shields.io/badge/License-GPLv3-blue.svg&#41;]&#40;https://www.gnu.org/licenses/gpl-3.0&#41;)
 ![GitHub issues](https://img.shields.io/github/issues/ornob011/BankingTransaction)
 ![GitHub forks](https://img.shields.io/github/forks/ornob011/BankingTransaction)
 ![GitHub stars](https://img.shields.io/github/stars/ornob011/BankingTransaction)
