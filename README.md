@@ -181,9 +181,91 @@ The schema includes two views that provide simplified access to certain data:
 - `v_payments`: Joins the `payments` and `accounts` tables to show each payment with its corresponding account and user information.
 
 <p align="justify">
+
 This database schema is designed to efficiently and accurately store banking-related data, while providing easy access to important information through well-defined relationships and key fields.
+
 </p>
 
+## API Documentation
+
+<p align="justify">
+
+The BankingTransaction system provides a RESTful API for easy integration with other systems. The following endpoints are available:
+
+</p>
+
+### Users
+#### Register User
+- **URL:** `/register`
+- **Method:** `POST`
+- **Data Params:** `{"first_name": "John", "last_name": "Doe", "email": "john.doe@example.com", "password": "password123", "confirm_password": "password123"}`
+
+#### Verify User
+- **URL:** `/verify`
+- **Method:** `POST`
+- **Data Params:** `{"token": "7b0eda7b-95dc-4532-981b-d7392b425952
+  ", "code": "7626"}`
+
+#### Login User
+- **URL:** `/login`
+- **Method:** `POST`
+- **Data Params:** `{"email": "john.doe@example.com", "password": "password123", "_token": "c3945bbe-b143-486c-9188-7fdc01dc4fe9"}`
+
+### Accounts
+#### Create Account
+- **URL:** `/account/create_account`
+- **Method:** `POST`
+- **Data Params:** `{"account_name": "DBBL", "account_type": "Savings"}`
+
+### Dashboard
+- **URL:** `/app/dashboard`
+- **Method:** `GET`
+
+<!---
+#### Get Account Details
+
+- **URL:** `/account/:account_id`
+- **Method:** `GET`
+- **URL Params:** `account_id=[integer]`
+- **Success Response:** `{"status": "success", "data": {"account_name": "John's Savings", "account_type": "savings", "balance": 0}}`
+-->
+### Transactions
+#### Deposit
+- **URL:** `/transact/deposit`
+- **Method:** `POST`
+- **Data Params:** `{"deposit_amount": "1000", "account_id": "1"}`
+
+#### Withdraw
+- **URL:** `/transact/withdraw`
+- **Method:** `POST`
+- **Data Params:** `{"withdrawal_amount": "300", "account_id": "1"}`
+
+#### Transfer
+- **URL:** `/transact/transfer`
+- **Method:** `POST`
+- **Data Params:** `{"transfer_from": "12345", "transfer_to": "67890", "transfer_amount": "1000"}`
+
+#### Payment History
+- **URL:** `/app/payment_history`
+- **Method:** `GET`
+
+
+#### Transaction History
+- **URL:** `/app/transact_history`
+- **Method:** `GET`
+
+
+### Error
+- **URL:** `/error`
+- **Method:** `GET`
+
+### Log Out
+- **URL:** `/logout`
+- **Method:** `GET`
+
+<p align="justify">
+Please note that all API requests are in `x-www-form-urlencoded` format and responses are in `ModelAndView` format.
+</p>
 
 ## Technical Support
 
@@ -204,9 +286,6 @@ Thank you for your contribution!
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)    
 
-
 This software is licensed under the GNU General Public License (GPL) version 3.
 
 The full text of the GPL can be found in the [LICENSE](LICENSE.txt) file, or online at <https://www.gnu.org/licenses/gpl-3.0.en.html>
-
-
