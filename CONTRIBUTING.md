@@ -1,6 +1,6 @@
 <div style="text-align: justify;">
 
-# Contributing to Image-Caption-Interface
+# Contributing to Banking Transaction
 
 First off, thanks for taking the time to contribute! ❤️
 
@@ -15,7 +15,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 <!-- omit in toc -->
 ## Table of Contents
 
-- [Contributing to Image-Caption-Interface](#contributing-to-image-caption-interface)
+- [Contributing to Banking Transaction](#contributing-to-banking-transaction)
   - [Code of Conduct](#code-of-conduct)
   - [I Have a Question](#i-have-a-question)
   - [I Want To Contribute](#i-want-to-contribute)
@@ -26,7 +26,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[Image-Caption-Interface Code of Conduct](https://github.com/ornob011/Image-Caption-Interfaceblob/master/CODE_OF_CONDUCT.md).
+[Banking Transaction Code of Conduct](https://github.com/ornob011/BankingTransaction/blob/master/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
 to <ornob011@gmail.com>.
 
