@@ -5,8 +5,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/ornob011/BankingTransaction)
 
 <p align="justify">
-Banking Transaction is a comprehensive banking transaction management system that allows users to perform various banking operations such as account creation, balance inquiry, deposit, withdrawal, and fund transfer. The project is designed to be scalable, secure, and easy to use.
-</p>
+Banking Transaction is a comprehensive banking transaction management system that allows users to perform various banking operations such as account creation, balance inquiry, deposit, withdrawal, and fund transfer. The project is designed to be scalable, secure, and easy to use with a technology stack consisting of Spring Boot for the backend, JSP, HTML, CSS, and JS for the frontend, and MySQL as the database.</p>
 
 ## Table of Contents
 
