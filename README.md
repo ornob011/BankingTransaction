@@ -208,6 +208,6 @@ Thank you for your contribution!
 
 This software is licensed under the GNU General Public License (GPL) version 3.
 
-The full text of the GPL can be found in the `LICENSE` file, or online at <https://www.gnu.org/licenses/gpl-3.0.en.html>
+The full text of the GPL can be found in the [LICENSE](LICENSE.txt) file, or online at <https://www.gnu.org/licenses/gpl-3.0.en.html>
 
 
