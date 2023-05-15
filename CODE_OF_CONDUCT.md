@@ -1,6 +1,6 @@
 <div style="text-align: justify;">
 
-# Code of Conduct - Image-Caption-Interface
+# Code of Conduct - Banking Transaction
 
 ## Our Pledge
 
