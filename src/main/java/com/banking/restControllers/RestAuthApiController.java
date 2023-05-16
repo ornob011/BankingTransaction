@@ -1,4 +1,4 @@
-package com.banking.rest_controllers;
+package com.banking.restControllers;
 
 import com.banking.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.banking.controller_advisor;
+package com.banking.controllerAdvisor;
 
 import com.banking.models.User;
 import org.springframework.web.bind.annotation.ControllerAdvice;

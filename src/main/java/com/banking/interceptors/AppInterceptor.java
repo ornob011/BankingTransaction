@@ -28,7 +28,7 @@ public class AppInterceptor  implements HandlerInterceptor {
             // Get User Object Stored In Session:
             User user = (User)session.getAttribute("user");
 
-            // TODO: Check if Authenticated:
+            // Check if Authenticated
             // boolean isAuthenticated = (boolean) session.getAttribute("authenticated");
 
             // Validate Session Attributes / Objects:
