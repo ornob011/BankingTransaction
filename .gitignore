@@ -31,5 +31,5 @@ build/
 ### VS Code ###
 .vscode/
 
-### Environment File ###
-.env
+### Email Properties ###
+src/main/resources/application-secrets.properties
