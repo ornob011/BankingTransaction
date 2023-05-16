@@ -1,15 +1,28 @@
 package com.banking.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.stereotype.Component;
 
 import java.util.Properties;
 
 // This class is used to configure the mail.
+@Configuration
+@PropertySource("classpath:application.properties")
+@Component
 public class MailConfig {
 
+    @Value("${email.username}")
+    private String emailUsername;
+
+    @Value("${email.password}")
+    private String emailPassword;
+
     @Bean
-    public static JavaMailSenderImpl getMailConfig() {
+    public JavaMailSenderImpl getMailConfig() {
         JavaMailSenderImpl emailConfig = new JavaMailSenderImpl();
 
         // Set Mail Properties:
@@ -22,8 +35,8 @@ public class MailConfig {
         // Set Mail Credentials:
         emailConfig.setHost("smtp.gmail.com");
         emailConfig.setPort(587);
-        emailConfig.setUsername("ornob011@gmail.com");
-        emailConfig.setPassword("krexmzoojaxqpmqq");
+        emailConfig.setUsername(emailUsername);
+        emailConfig.setPassword(emailPassword);
 
         return emailConfig;
     }
