@@ -15,7 +15,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.HttpSession;
 
 
-
 @Controller // This annotation is used to tell the spring that this class is a controller.
 public class AuthController { // This class is used to handle the authentication related requests.
 
@@ -30,6 +29,7 @@ public class AuthController { // This class is used to handle the authentication
         // Set Token String:
         String token = Token.generateToken();
         // Send Token to View:
+        System.out.println(token);
         getLoginPage.addObject("token", token);
         getLoginPage.addObject("PageTitle", "Login");
         return getLoginPage;
@@ -96,5 +96,5 @@ public class AuthController { // This class is used to handle the authentication
         redirectAttributes.addFlashAttribute("logged_out", "Logged out successfully"); // Set Logged Out Message
         return "redirect:/login";
     }
-
+    // End Of Logout Method.
 }
