@@ -6,23 +6,25 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.stereotype.Component;
-
 import java.util.Properties;
 
 // This class is used to configure the mail.
-@Configuration
-@PropertySource("classpath:application.properties")
-@Component
+@Configuration // Defines the configuration for the data source used by the application context.
+@PropertySource("classpath:application.properties") // Used to load the properties file.
+@Component // Represents service for managing email configuration.
 public class MailConfig {
 
+    // Get the email username and password from the application.properties file.
     @Value("${email.username}")
     private String emailUsername;
 
     @Value("${email.password}")
     private String emailPassword;
 
-    @Bean
+    // Configure the mail.
+    @Bean // This annotation is used to indicate that a method produces a bean to be managed by the Spring container.
     public JavaMailSenderImpl getMailConfig() {
+
         JavaMailSenderImpl emailConfig = new JavaMailSenderImpl();
 
         // Set Mail Properties:
